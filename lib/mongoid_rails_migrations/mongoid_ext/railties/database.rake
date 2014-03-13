@@ -1,5 +1,5 @@
 namespace :db do
-  namespace :mongo
+  namespace :mongo do
     desc 'Drops all the collections for the database for the current Rails.env'
     task :drop => :environment do
       Mongoid.master.collections.each {|col| col.drop_indexes && col.drop unless ['system.indexes', 'system.users'].include?(col.name) }

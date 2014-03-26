@@ -31,14 +31,14 @@ module Mongoid #:nodoc
 
   # Data migrations can manage the modification of data. It's a solution to the common problem of modifying
   # data between code revisions within a document oriented database.
-  # 
+  #
   # Example of simple migration for a system dependency:
-  # 
+  #
   #   class AddBaselineSurveySchema < Mongoid::Migration
   #     def self.up
   #       SurveySchema.create(:label => 'Baseline Survey')
   #     end
-  #     
+  #
   #     def self.down
   #       SurveySchema.where(:label => 'Baseline Survey').first.destroy
   #     end
@@ -212,7 +212,7 @@ module Mongoid #:nodoc
       end
 
       def migrations_path
-        'db/migrate'
+        'db/mongo/migrate'
       end
 
       # def schema_migrations_table_name

@@ -18,14 +18,14 @@
   * rails generate mongoid:migration your_migration_name_here
 
 * migrations:
-  * db:migrate
-  * db:migrate:down
-  * db:migrate:up
-  * db:rollback
-  * db:migrate:redo
-  * db:migrate:reset
-  * db:reseed (handled by mongoid)
-  * db:version
+  * db:mongo:migrate
+  * db:mongo:migrate:down
+  * db:mongo:migrate:up
+  * db:mongo:rollback
+  * db:mongo:migrate:redo
+  * db:mongo:migrate:reset
+  * db:mongo:reseed (handled by mongoid)
+  * db:mongo:version
 
 == CREDITS TO
   * rails
